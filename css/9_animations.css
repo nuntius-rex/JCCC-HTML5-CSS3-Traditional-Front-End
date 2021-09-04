@@ -1,0 +1,115 @@
+
+/*First Animation*/
+.photoAnimation{
+  transform: translateX(0px) translateY(0px) scale(1) rotate(0deg) skew(0deg, 0deg);
+  transition: transform;
+  transition-duration: 2s;
+  transition-delay:50ms;
+  transition-timing-function: ease;
+}
+
+.photoAnimation:hover{
+  border:solid 3px red;
+  /*translateX - horizontal movement, translateY - vertical movement */
+  transform: translateX(40px) translateY(150px) scale(1.5) rotate(20deg) skew(15deg, 4deg);
+  transition: transform;
+  transition-duration: 2s;
+  transition-delay:50ms;
+  transition-timing-function: ease;
+}
+
+/*Second Animation*/
+.imgRight{
+  float:right;
+  margin-right:15px;
+  border: solid #6570b2;
+}
+
+.imgLeft{
+  float:left;
+  margin-right:5px;
+  border: solid #6570b2;
+}
+
+
+#tab2{
+  position: absolute;
+  margin-top: -350px;
+}
+
+.flyOut{
+  border: solid 1px;
+  width:350px;
+  padding: 20px;
+  background-color: #f0f0f0;
+
+  transform: translateX(-370px);
+  transition: transform;
+  transition-duration: 2s;
+  transition-delay:50ms;
+  transition-timing-function: ease;
+}
+
+.flyOut:hover{
+  transform: translateX(-5px);
+  transition: transform;
+  transition-duration: 2s;
+  transition-delay:50ms;
+  transition-timing-function: ease;
+}
+
+/*Third Animation*/
+.box{
+  border: solid 1px;
+  width: 100px;
+  height: 100px;
+}
+
+@keyframes divColorFlash{
+  0%{
+    background-color: red;
+  }
+  25%{
+    background-color: green;
+  }
+  50%{
+    background-color: blue;
+  }
+  100%{
+    background-color: yellow;
+  }
+}
+
+
+.colorDiv:hover{
+  animation-name: divColorFlash;
+  animation-duration: 3s;
+}
+
+/*Fourth Animation*/
+
+@keyframes divSlideShow{
+  10%{
+    background-image: url("../img/puppies/puppy1.jpg");
+  }
+  25%{
+    background-image: url("../img/puppies/puppy2.jpg");
+  }
+  50%{
+    background-image: url("../img/puppies/puppy3.PNG");
+  }
+  100%{
+    background-image: url("../img/puppies/puppy4.jpg");
+  }
+}
+
+.slideShow{
+  border: solid 1px;
+  width:250px;
+  height: 200px;
+
+  animation-name: divSlideShow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  background-size:250px  200px;
+}

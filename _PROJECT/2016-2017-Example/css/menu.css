@@ -1,0 +1,41 @@
+
+
+#menu_section{
+    border: none;
+    background: linear-gradient(to right, black, #ab4615, black );
+}
+#menu_section div{
+    border: none;
+}
+
+.right_menu{
+    text-align: right;
+}
+
+nav{
+    width:100%;
+    
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+    color: #9a651d;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+nav a:hover{
+    color:#fff;
+}

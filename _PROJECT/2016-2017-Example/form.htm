@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Steamworks - Your Next Business!</title>
+
+  <link rel="stylesheet" href="css/flex.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/global_design.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
+
+
+<style>
+
+ header{
+   text-align: center;
+ }
+
+ #logo{
+   width:50%;
+
+ }
+
+</style>
+
+</head>
+<body>
+
+<div id="content">
+
+  <section>
+    <header class="column">
+
+    <!-- logo loaded here -->
+
+    <img id="logo" src="img/steamworks_logo_transp2.png">
+
+    </header>
+  </section>
+
+  <section id="menu_section">
+      <div class="column ">
+
+        <nav>
+              <ul>
+                <li><a href="index.htm"> <i class="fa fa-cog" aria-hidden="true"></i>HOME</a></li>
+                <li><a href="form.htm"><i class="fa fa-cogs" aria-hidden="true"></i>JOIN US</a></li>
+              </ul>
+        </nav>
+    </div>
+    <div class="column right_menu">
+        <nav>
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></a></i>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></a></i>
+        </div>
+
+  </section>
+
+
+  <section>
+    <div class="column" id="form_column">
+
+        <form method="post" action="http://localhost/post/">
+
+            <p>
+              <label for="first_name">First Name:</label>
+              <input id="first_name" name="first_name"
+              class="inputs" type="text" maxlength="40" value="" required>
+            </p>
+
+            <p>
+              <label for="last_name">Last Name:</label>
+              <input id="last_name" name="last_name"
+              class="inputs" type="text" maxlength="40" value="" required>
+            </p>
+
+            <p>
+              <label for="email">Email:</label>
+              <input id="email" name="email"
+               class="inputs" type="email" maxlength="150" required>
+            </p>
+
+            <p>
+              <label for="phone">Tel:</label>
+              <input id="phone" name="phone"
+               class="inputs" type="tel">
+            </p>
+
+            <p>
+              <input type="submit" value="Submit">
+            </p>
+
+        </form>
+
+
+    </div>
+  </section>
+
+  <section>
+    <footer class="column">
+
+    &copy; Copyright Dan Guinn, 2016
+
+    </footer>
+  </section>
+
+</div>
+
+</body>
+</html>

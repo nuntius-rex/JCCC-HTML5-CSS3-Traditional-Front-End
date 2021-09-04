@@ -1,0 +1,31 @@
+
+#form_column{
+    padding-left: 10%;
+}
+
+/*
+=======================
+Global Form Styles
+=======================
+*/
+
+.inputs{
+  border: solid 1px;
+  width:80%;
+  height:30px;
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+label{
+  width:40%; /*change styles to percentage for flex*/
+  display:inline-block;
+  font-size: 15px;
+  color:#fff; /*added to match background*/
+}
+
+textarea{
+  width:80%; /*change styles to percentage for flex*/
+  height:100px;
+  border: solid 1px;
+}

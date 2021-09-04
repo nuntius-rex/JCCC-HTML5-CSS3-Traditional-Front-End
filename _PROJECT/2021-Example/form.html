@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SteamWorks - Contact Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="lib/font-awesome-4.6.3/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header>
+      <img src="img/logo/steamworks_logo_transp2.png" alt="">
+    </header>
+    <nav>
+      <a href="index.html"><i class="fa fa-cog" aria-hidden="true"></i>Home</a>
+      <a href="form.html"><i class="fa fa-cogs" aria-hidden="true"></i>Join Us!</a>
+    </nav>
+    <main class="flexLayout">
+      <section>
+        <form action="form_handler/debug.php" method="post">
+
+          <p>
+            <label for="first_name">First Name:</label><br>
+            <input type="text" name="first_name" id="first_name" value="" placeholder="Enter first name">
+          </p>
+          <p>
+            <label for="last_name">Last Name:</label><br>
+            <input type="text" name="last_name" id="last_name" value="" placeholder="Enter last name">
+          </p>
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" value="" placeholder="Enter email">
+          </p>
+          <p>
+            <input type="submit" name="submit" value="Submit">
+          </p>
+
+          <!-- Example send in "get" method setting:
+          ?first_name=Dan&last_name=Guinn&email=dan%40gmail.com&submit=Submit -->
+
+        </form>
+      </section>
+
+
+    </main>
+
+    <footer>
+      <p>
+        &copy; Dan Guinn, 2021
+      </p>
+    </footer>
+  </body>
+</html>

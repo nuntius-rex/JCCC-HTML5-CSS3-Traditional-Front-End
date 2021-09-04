@@ -1,0 +1,274 @@
+
+      html, body{
+        height:100%;
+        margin:0;
+
+        /*No Gutters: */
+        /*padding:0;*/
+
+        /* Page Gutters:
+        padding-left:3%;
+        padding-right:3%;
+
+        */
+      }
+
+      body{
+        font-family:arial;
+        box-shadow: 5px 5px 5px gray;
+        border: solid 2px #942e07;
+      }
+
+      a{
+        color:#9a651d;
+      }
+      a:hover{
+        color:#FFFFFF;
+      }
+
+      header{
+        border:solid 1px;
+        padding:5px;
+        height:200px;
+        background-image: url("../img/bg/sp_bg1.jpg");
+        /*
+        Second version:
+        background-image: url("../img/bg/istockphoto-941775158-612x612.jpg");
+        background-size: cover;
+        */
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000000;
+        text-align: center;
+      }
+      header img{
+        margin-top: 10px;
+      }
+
+      nav{
+        border:solid 1px;
+        padding:5px;
+        background: linear-gradient(to right, black, #ab4615, black );
+      }
+
+      nav a {
+        color:#9a651d;
+        font-weight: bold;
+      }
+
+      nav a:hover{
+        color:#FFFFFF;
+      }
+
+
+      .flexLayout{
+        display:flex;
+      }
+
+      section{
+        /*border:solid 1px;*/
+        padding:5px;
+        min-height:60%; /*Adjust per taste*/
+
+        flex-grow:1;
+        flex-shrink:1;
+        flex-basis:0;
+      }
+
+
+      footer{
+        /*border:solid 1px;*/
+        padding:5px;
+        text-align:center;
+        background: linear-gradient(to right, black, #ab4615, black );
+        color: #ffffff;
+      }
+
+
+
+      /*Slideshow*/
+
+      @keyframes divSlideShow{
+        10%{
+          background-image: url("../img/products/ART_james-corbett-1.jpg");
+        }
+        50%{
+          background-image: url("../img/products/ART_james-corbett-3.jpg");
+        }
+        100%{
+          background-image: url("../img/products/ART_james-corbett-29.jpg");
+        }
+
+      }
+
+      .slideShow{
+        border: solid 1px;
+        width:250px;
+        height: 200px;
+
+        animation-name: divSlideShow;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        background-size:250px  200px;
+      }
+
+      /* First Column - First Row*/
+
+      #gallery_section{
+        background: linear-gradient(to bottom right, #942e07,#171717);
+        max-width: 365px;
+        min-height: 500px;
+
+      }
+
+      #gallery_section div{
+        background-color: #000000;
+        height: 95%;
+        margin-top:3%;
+        margin-left: 3%;
+        margin-right: 3%;
+        padding:10px;
+        background-image: url(../img/products/Clothing_1.jpg);
+        overflow: hidden;
+      }
+
+      #gallery_section ul {
+          list-style-type: none;
+          margin-left: -50px;
+      }
+
+      #gallery_section img{
+        width:100px;
+
+      }
+      #gallery_section img:hover{
+
+        position: absolute;
+        top: 330px;
+        left: 65px;
+        z-index: 2;
+        width:100%;
+        transform: translateX(0px) translateY(0px) scale(1.5) rotate(0deg) skew(0deg, 0deg);
+        transition: transform;
+        transition-duration: 2s;
+        transition-delay:50ms;
+        transition-timing-function: ease;
+        max-width: 250px;
+        max-height: 340px;
+      }
+
+
+
+      /* Second Column - First Row*/
+      #join_us_section{
+        text-align: center;
+        background-image: url("../img/bg/Gold-Fabric-Background.jpg");
+        color:#FFFFFF;
+        font-size: 200%;
+
+        text-shadow: 2px 2px #942e07;
+      }
+
+      /*Button styling for section anchor: */
+      #join_us_section a {
+          color: #942e07;
+          background-color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          text-decoration: none;
+          text-shadow: none;
+      }
+
+
+      /*Video Styles:*/
+      iframe{
+        width:100%;
+        height: 100%;
+      }
+
+      #video_section{
+        background-color: #000000;
+      }
+
+
+      #welcome_section{
+        background: linear-gradient(to bottom right, #942e07,#171717);
+        color:#ffffff;
+        padding:20px;
+      }
+
+      #slideshow_section{
+          background: linear-gradient(to bottom right, #942e07,#171717);
+          text-align: center;
+      }
+
+      #slideshow_section .slideShow{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+/* Breakpoints */
+
+
+
+
+      @media (min-width:0px) and (max-width:319px){
+        header{
+          max-height:100px !important;
+        }
+        header img{
+          width:250px;
+        }
+
+        section{
+          background-color:orange;
+        }
+
+        .flexLayout{
+          flex-direction: column;
+          min-height:200px;
+        }
+
+        section:nth-child(1){
+          min-height:210px;
+        }
+        section:nth-child(2){
+          min-height:50px;
+        }
+        section:nth-child(3){
+          min-height:50px;
+        }
+      }
+      @media (min-width:320px) and (max-width:639px){
+
+        header img{
+          min-width:250px;
+          width:85%;
+        }
+        section{
+          /*background-color:red;*/
+          min-height:210px;
+        }
+
+
+        .flexLayout{
+          flex-direction: column;
+          min-height:200px;
+        }
+      }
+      @media (min-width:640px) and (max-width:767px){
+        section{
+          /*background-color:green;*/
+        }
+      }
+      @media (min-width:768px) and (max-width:1023px){
+        section{
+          /*background-color:blue;*/
+        }
+      }
+      @media (min-width:1024px){
+        section{
+          /*background-color:purple;*/
+        }
+      }

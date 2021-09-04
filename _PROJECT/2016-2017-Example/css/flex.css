@@ -1,0 +1,24 @@
+section{
+  /*border: solid 1px ;*/
+  max-width: 100%; /* Modified from 90% on our example so that it will fill the content container*/
+  margin: 0 auto;
+  display:flex;
+}
+
+.column{
+  /*border: solid 1px;*/
+  margin:10px;
+  flex-grow:1;
+  flex-shrink: 1;
+  flex-basis:0;
+  flex-wrap: wrap;
+}
+
+
+img{
+  width:100%;
+}
+
+iframe{
+  width:100%;
+}

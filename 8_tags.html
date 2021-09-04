@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tags</title>
+    <style media="screen">
+      body{
+        margin:10%;
+      }
+      #tblExample{
+        border:solid 1px;
+        width:300px;
+      }
+      #tblExample th{
+        background-color: red;
+      }
+      #tblExample td{
+        border:solid 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <span id="top"></span>
+    <h1>Tags</h1>
+
+    <h2>Paragraphs</h2>
+      Integer elementum dui et mauris pharetra, ac dignissim metus faucibus. Pellentesque a lacus quis diam vulputate pellentesque. Curabitur laoreet tristique risus in imperdiet. Quisque nec rutrum nisi, eu porttitor felis. Mauris elementum mi turpis, eget dictum lectus vehicula et. Nam magna erat, vehicula at ipsum id, cursus suscipit quam. Nulla erat neque, accumsan eu elit quis, ullamcorper iaculis ipsum. Quisque sed arcu porttitor, hendrerit urna sit amet, egestas enim. Sed accumsan erat eget leo aliquam scelerisque. Etiam pretium nisi mauris, nec viverra tortor pellentesque at.
+    <p></p>
+
+    <h2>Anchors</h2>
+    <p>
+      <a href="https://google.com">Google (absolute link/url)</a>
+    </p>
+    <p>
+      <a href="index.html">Home (relative link/url)</a>
+    </p>
+    <p>
+      <a href="https://google.com" target="_blank">Google (absolute link/url, open in a new tab or window)</a>
+    </p>
+    <p>
+      <a href="img/puppies/puppy5.jpg">View Puppy (open image in a new tab or window)</a>
+    </p>
+    <p>
+      <a href="img/puppies/puppy5.jpg" download>Download Puppy (download link) DOES NOT WORK!!!</a>
+    </p>
+    <p>
+      <a href="img/puppies/puppy5.jpg">
+        <img src="img/puppies/puppy5.jpg" style="width:100px" target="_blank">
+      </a>
+    </p>
+    <p>
+      <a href="mailto:dan@danguinn.com">Email Dan</a>
+    </p>
+    <p>
+      Basic Syntax: mailto: ?subject= &body=
+      <a href="mailto:?subject=Look at this website!&body=I thought this website was interesting: danguinn.com">Send to a Friend</a>
+    </p>
+    <p>
+      <a href="tel:9131234567">Call 913-123-4567</a>
+    </p>
+    <p>
+      <a href="#top">Go to Top</a><br>
+      <a href="#bottom">Go to Bottom</a>
+    </p>
+
+    <h2>List</h2>
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+    <ol>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ol>
+
+    <h2>Tables</h2>
+
+    <table id="tblExample">
+      <tbody>
+        <tr>
+          <th>One</th>
+          <th>Two</th>
+          <th>Three</th>
+        </tr>
+        <tr>
+          <td>One</td>
+          <td>Two</td>
+          <td>Three</td>
+        </tr>
+        <tr>
+          <td>One</td>
+          <td>Two</td>
+          <td>Three</td>
+        </tr>
+        <tr>
+          <td>One</td>
+          <td>Two</td>
+          <td>Three</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <br>
+
+
+    <table border=1>
+      <tr>
+        <th>One</th>
+        <th>Two</th>
+        <th>Three</th>
+      </tr>
+      <tr>
+        <td>One</td>
+        <td colspan=2>Two - Three</td>
+      </tr>
+      <tr>
+        <td colspan=2>One - Two</td>
+        <td>Three</td>
+      </tr>
+    </table>
+    <br><br>
+    <table border=1>
+      <tr>
+        <th>One</th>
+        <th>Two</th>
+        <th>Three</th>
+      </tr>
+      <tr>
+        <td>One</td>
+        <td>Two</td>
+        <td rowspan=2>Three</td>
+      </tr>
+      <tr>
+        <td>One</td>
+        <td>Two</td>
+      </tr>
+    </table>
+
+    <h1>Entities</h1>
+    <p>
+      <small> (Code that makes special characters) </small>
+    </p>
+    <p>
+      less than: &lt; <br>
+      greater than: &gt; <br>
+      copyright: &copy; <br>
+      non-breaking space: |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+    </p>
+
+
+
+    <span id="bottom"></span>
+  </body>
+</html>

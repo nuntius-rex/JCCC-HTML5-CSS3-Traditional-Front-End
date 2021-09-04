@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+
+    <form action="form_handler/debug.php" method="post">
+
+      <p>
+        <label for="first_name">First Name:</label><br>
+        <input type="text" name="first_name" id="first_name" value="" placeholder="Enter first name...I mean it!">
+      </p>
+      <p>
+        <label for="last_name">Last Name:</label><br>
+        <input type="text" name="last_name" id="last_name" value="" placeholder="Enter last name...I mean it!">
+      </p>
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" value="" placeholder="Enter email...I mean it!">
+      </p>
+      <p>
+        <input type="submit" name="submit" value="Submit">
+      </p>
+
+      <!-- Example send in "get" method setting:
+      ?first_name=Dan&last_name=Guinn&email=dan%40gmail.com&submit=Submit -->
+
+    </form>
+
+  </body>
+</html>

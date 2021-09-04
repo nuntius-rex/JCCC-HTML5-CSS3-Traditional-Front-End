@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>3 Ways to Script</title>
+  </head>
+  <body>
+
+    <h1>3 Ways to Script</h1>
+
+    <p>One</p>
+    <p class="group">Two - has class "group"</p>
+    <p class="group">Three - has class "group"</p>
+    <p id="justOne">Four - has id "justOne"</p>
+
+    <script type="text/javascript">
+        //By Tag:
+        //var Allp= document.getElementsByTagName('p');
+        var Allp= document.querySelectorAll('p');
+        console.log(Allp.length);
+        for(i=0;i<Allp.length;i++){
+          Allp[i].addEventListener('click', function(){
+            alert('Display every time a paragraph is clicked');
+          });
+        }
+
+        //By Class:
+        //var group = document.getElementsByClassName('group');
+        var group = document.querySelectorAll('.group');
+        for(i=0;i<group.length;i++){
+          group[i].addEventListener('click', function(){
+            alert('Display every time a group is clicked');
+          });
+        }
+
+        //By Id:
+        //var justOne = document.getElementById('justOne');
+        var justOne = document.querySelectorAll('#justOne');
+        justOne.addEventListener('click', function(){
+          alert('Display only for this one by id!')
+        });
+
+
+    </script>
+
+  </body>
+</html>

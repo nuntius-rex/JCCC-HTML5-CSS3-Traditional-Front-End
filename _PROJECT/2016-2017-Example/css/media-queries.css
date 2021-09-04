@@ -1,0 +1,105 @@
+@media (min-width:0px) and (max-width:319px){
+
+    #slideshowColumn{
+        display: none;
+    }
+
+   #galleryColumn{
+       display: none;
+   }
+
+    /*
+    section{
+      background-color: orange;
+    }
+    */
+}
+
+
+@media (min-width:320px) and (max-width:639px){
+
+    #slideshowColumn{
+        display: none;
+    }
+
+   #galleryColumn{
+       display: none;
+   }
+
+    /*
+    section{
+      background-color: red;
+    }
+    */
+}
+
+@media (min-width:640px) and (max-width:767px){
+
+  #slideshowColumn{
+      display: none;
+  }
+
+ #galleryColumn{
+     display: none;
+ }
+
+
+  /*
+  section{
+    background-color: green;
+  }
+  */
+
+}
+
+
+/* Added intermediate media query*/
+@media (min-width:768px) and (max-width:1000px){
+
+    .copy_column{
+        display: none;
+    }
+
+    .join_column{
+         display:none;
+    }
+
+    /*
+    section{
+      background-color: blue;
+    }
+    */
+
+
+}
+/* Added intermediate media query*/
+
+
+
+@media (min-width:1000px) and (max-width:1023px){
+
+    #join_us{
+         font-size: 21px !important;
+    }
+
+    /*
+    section{
+      background-color: blue;
+    }
+    */
+
+
+}
+
+@media (min-width:1024px) {
+
+    #join_us{
+         font-size: 200% !important;
+    }
+    /*
+   section{
+     background-color: purple;
+   }
+  */
+
+}

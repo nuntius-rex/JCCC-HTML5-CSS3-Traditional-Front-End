@@ -1,0 +1,60 @@
+
+  #gallery{
+      width:610px !important; /* Added !important to protect this space from sizing */
+  }
+
+  #gallery .thumb{
+    width:100px;
+    height:75px;
+  }
+
+
+
+
+  #gallery ul{
+    list-style-type: none;
+  }
+
+  #gallery li{
+    /*
+    Alternate display method to display horizontal
+    display:inline;*/
+  }
+
+  #gallery span{
+    display: none;
+  }
+
+  #gallery a{
+    text-decoration: none;
+  }
+
+  #gallery a:hover span{
+    display: block;
+    position: absolute;
+
+
+
+    /* The following modifications were made to make the gallery work with diverse images in flex container*/
+
+    margin-left:130px;
+    top:250px;
+    background-color: #000;
+    height: 400px;
+    width:400px;
+    clip: rect(0px,400px,400px,0px);
+
+
+}
+
+#default_div{
+    border: solid 1px;
+    position: absolute;
+    margin-left:170px;
+    top:250px;
+    width:398px;
+    height:400px;
+    background-color: #000;
+    box-shadow: 5px 5px 5px #3b3533;
+    overflow: hidden;
+}

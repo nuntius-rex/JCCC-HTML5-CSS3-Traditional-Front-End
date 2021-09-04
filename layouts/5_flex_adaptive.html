@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flex Adaptive Layout </title>
+    <style media="screen">
+
+      html, body{
+        height:100%;
+        margin:0;
+
+        /*No Gutters: */
+        /*padding:0;*/
+
+        /* Page Gutters: */
+        padding-left:3%;
+        padding-right:3%;
+      }
+
+      body{
+        font-family:arial;
+      }
+
+      header{
+        border:solid 1px;
+        padding:5px;
+        height:200px;
+      }
+      nav{
+        border:solid 1px;
+        padding:5px;
+      }
+      section{
+        border:solid 1px;
+        padding:5px;
+        /*min-height:50%; DO NOT USE HERE*/
+        min-height:50px;
+        flex-grow:1;
+        flex-shrink:1;
+        flex-basis:0;
+      }
+      footer{
+        border:solid 1px;
+        padding:5px;
+        text-align:center;
+      }
+
+      .flexLayout{
+        display:flex;
+        /*
+        Note: to add column direction changes,
+        they must be applied to this class in the media queries.
+        */
+      }
+
+      @media (min-width:0px) and (max-width:319px){
+
+        body{
+          width:270px;
+          min-width:270px;
+          max-width:270px;
+        }
+        section{
+          background-color:orange;
+
+        }
+        .flexLayout{
+          flex-direction: column;
+        }
+      }
+
+      @media (min-width:320px) and (max-width:639px){
+
+        body{
+          width:500px;
+          min-width:500px;
+          max-width:500px;
+        }
+        section{
+          background-color:red;
+        }
+        .flexLayout{
+          flex-direction: column;
+        }
+      }
+
+      @media (min-width:640px) and (max-width:767px){
+
+        body{
+          width:700px;
+          min-width:700px;
+          max-width:700px;
+        }
+        section{
+          background-color:green;
+
+        }
+        .flexLayout{
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width:768px) and (max-width:1023px){
+
+        body{
+          width:900px;
+          min-width:900px;
+          max-width:900px;
+        }
+        section{
+          background-color:blue;
+
+        }
+        .flexLayout{
+          flex-direction: row;
+        }
+      }
+
+      @media (min-width:1024px){
+
+        body{
+          width:1020px;
+          min-width:1020px;
+          max-width:1020px;
+        }
+        section{
+          background-color:purple;
+
+        }
+        .flexLayout{
+          flex-direction: row;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Flex Adaptive Layout</h1>
+      <p>Using Flex, we have the ability to drop in new columns at will.<br>
+        "Adaptive" means that the layout "snaps to" given sizes on page resize/dimensions.
+      </p>
+      <p>Load Banner or Hero Image here.</p>
+    </header>
+    <nav>
+      <p>Page Links here</p>
+    </nav>
+    <main class="flexLayout">
+      <section>
+        <p>This is a section</p>
+      </section>
+      <section>
+        <p>This is a section</p>
+      </section>
+      <section>
+        <p>This is a section</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; Dan Guinn, 2021
+      </p>
+    </footer>
+  </body>
+</html>

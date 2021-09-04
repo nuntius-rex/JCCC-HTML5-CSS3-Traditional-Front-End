@@ -1,0 +1,59 @@
+
+@keyframes divSlideShow {
+
+  0%{
+    background-image: url(../img/Accessories_1.jpg);
+    /*background-size: cover;*/
+    background-size: 450px 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  25%{
+
+    background-image: url(../img/Accessories_4.jpg);
+    background-size: 450px 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  50%{
+
+    background-image: url(../img/ART_james-corbett-3.jpg);
+    background-size: 450px 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  100%{
+
+    background-image: url(../img/ART_james-corbett-29.jpg);
+    background-size: 450px 350px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+  }
+
+}
+
+
+.slideshowDiv{
+  animation-name: divSlideShow;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 350px;
+  width: 450px;
+  box-shadow: 5px 5px 5px #3b3533;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slideshowOuterContainer{
+    padding: 10px;
+    background: linear-gradient(to bottom right, #942e07, gray);
+}

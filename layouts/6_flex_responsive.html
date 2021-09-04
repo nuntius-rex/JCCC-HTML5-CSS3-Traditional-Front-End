@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flex Responsive Layout</title>
+    <style media="screen">
+
+      html, body{
+        height:100%;
+        margin:0;
+
+        /*No Gutters: */
+        /*padding:0;*/
+
+        /* Page Gutters: */
+        padding-left:3%;
+        padding-right:3%;
+      }
+
+      body{
+        font-family:arial;
+      }
+
+      header{
+        border:solid 1px;
+        padding:5px;
+        height:200px;
+      }
+      nav{
+        border:solid 1px;
+        padding:5px;
+      }
+      section{
+        border:solid 1px;
+        padding:5px;
+        min-height:60%; /*Adjust per taste*/
+
+        flex-grow:1;
+        flex-shrink:1;
+        flex-basis:0;
+
+      }
+      footer{
+        border:solid 1px;
+        padding:5px;
+        text-align:center;
+      }
+
+      .flexLayout{
+        display:flex;
+      }
+
+      @media (min-width:0px) and (max-width:319px){
+        header{
+          min-height:400px;
+        }
+        section{
+          background-color:orange;
+        }
+        .flexLayout{
+          flex-direction: column;
+          min-height:200px;
+        }
+      }
+      @media (min-width:320px) and (max-width:639px){
+        section{
+          background-color:red;
+        }
+      }
+      @media (min-width:640px) and (max-width:767px){
+        section{
+          background-color:green;
+        }
+      }
+      @media (min-width:768px) and (max-width:1023px){
+        section{
+          background-color:blue;
+        }
+      }
+      @media (min-width:1024px){
+        section{
+          background-color:purple;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Flex Responsive Layout</h1>
+
+      <p>This is a Flex multi-column liquid layout.<br>
+        Columns can be added by simply droping them in.
+        The term "Responsive" means Liquid+Adaptive.
+        Meaning that the page resizes like a liquid layout automatically by page width but also adapts or "snaps to" when certain sizes are reached.</p>
+
+      <p>Load Banner or Hero Image here.</p>
+    </header>
+    <nav>
+      <p>Page Links here</p>
+    </nav>
+    <main class="flexLayout">
+      <section>
+        <p>This is a section</p>
+      </section>
+      <section>
+        <p>This is a section</p>
+      </section>
+      <section>
+        <p>This is a section</p>
+      </section>
+      <!--
+      Drop in a new piece of section code to create a new column:
+      <section>
+        <p>This is a section</p>
+      </section>
+      -->
+
+    </main>
+
+    <footer>
+      <p>
+        &copy; Dan Guinn, 2021
+      </p>
+    </footer>
+  </body>
+</html>

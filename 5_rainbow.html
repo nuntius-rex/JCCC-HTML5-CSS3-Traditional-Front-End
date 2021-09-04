@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rainbow JavaScript Example</title>
+  </head>
+  <body>
+    <button type="button" id="RainbowBTN">Click for Rainbow</button>
+
+    <script type="text/javascript">
+
+      //An example of JavaScript in action
+      //var RainbowBTN=document.getElementById('RainbowBTN');
+      var RainbowBTN=document.querySelector('#RainbowBTN');
+      var rainbow=["red","orange","green","blue","yellow",
+      "indigo", "violet", "purple","aqua", "chocolate", "coral", "wheat"];
+
+      function changeBG(){
+        var randomNum=Math.floor(rainbow.length*Math.random());
+        console.log(randomNum);
+        document.body.style.background=rainbow[randomNum];
+      }
+      RainbowBTN.addEventListener("click", changeBG);
+
+    </script>
+
+  </body>
+</html>

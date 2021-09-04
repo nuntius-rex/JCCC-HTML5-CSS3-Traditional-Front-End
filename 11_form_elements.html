@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>For Elements</title>
+    <style media="screen">
+      body{
+        font-family:arial;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>For Elements</h1>
+
+    <form action="form_handler/debug.php" method="post">
+      <p>
+        <label for="hidden1">Hidden:</label><br>
+        <input type="hidden" name="hidden" value="1" id="hidden1">
+      </p>
+
+      <p>
+        <label for="text1">Text - With Default Value:</label><br>
+        <input type="text" name="text1" value="1" id="text1">
+      </p>
+
+      <p>
+        <label for="text2">Text - With Placeholder:</label><br>
+        <input type="text" name="text2" value="" id="text2" placeholder="Enter text">
+      </p>
+
+      <p>
+        <label for="text3">Text - Disabled:</label><br>
+        <input type="text" name="text3" value="" id="text3" disabled>
+      </p>
+
+      <p>
+        <label for="text4">Text Area:</label><br>
+        <textarea name="text4" rows="8" cols="80" id="text4">Default values go here.</textarea>
+      </p>
+
+      <p>
+        <label for="num1">Number:</label><br>
+        <input type="number" name="num1" value="" id="num1">
+      </p>
+
+      <p>
+        <label for="email1">Email:</label><br>
+        <input type="email" name="email1" value="">
+      </p>
+
+      <p>
+        <label for="checkbox1">Single Checkbox</label><br>
+        <input type="checkbox" name="checkbox1_green-eggs-and-ham" value="yes" id="checkbox1">
+        <small>&nbsp;Green Eggs & Ham?</small><br>
+        <small>
+          <em>Note: If not checked, the default behavior does not send it at all.</em>
+        </small>
+      </p>
+
+      <p>
+        <label>Checkbox - Mood</label><br>
+        <input type="checkbox" name="mood[]" value="happy" checked> <small>Happy</small><br>
+        <input type="checkbox" name="mood[]" value="sad"> <small>Sad</small><br>
+        <input type="checkbox" name="mood[]" value="angry">  <small>Angry</small><br>
+        <small>
+          <em>Note: If not checked, the default behavior does not send it at all.</em>
+        </small>
+      </p>
+
+      <p>
+          <label>Radio Buttons:</label><br>
+          <input type="radio" name="color" value="red" checked> <small>Red</small><br>
+          <input type="radio" name="color" value="blue"> <small>Blue</small><br>
+          <input type="radio" name="color" value="green"> <small>Green</small><br>
+
+      </p>
+
+      <p>
+        <label for="select1">Select Field:</label><br>
+        <select class="" name="select1" id="select1">
+            <option value=""></option>
+            <option value="yes" selected>Yes</option>
+            <option value="no">No</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="multi-select">Multi-Select:</label><br>
+        <select name="multi[]" id="multi-select" multiple>
+          <option value=""></option>
+          <option value="yes" selected>Yes</option>
+          <option value="no">No</option>
+          <option value="maybe">Maybe?</option>
+          <option value="think-so">Thing so!</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="url1">Url Field <small>( pattern: https:// )</small>:</label><br>
+        <input type="url" name="url1" value="" id="url1" placeholder="https://" pattern="https://.*">
+      </p>
+
+      <p>
+        <label for="tel1">Telephone:</label><br>
+        <input type="tel" name="tel1" value="" id="tel1" placeholder="000-000-0000"
+        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      </p>
+
+      <p>
+        <label for="date1">Date:</label><br>
+        <input type="date" name="date1" value="" id="date1">
+      </p>
+
+      <p>
+        <label for="time1">Time:</label><br>
+        <input type="time" name="time1" value="" id="time1">
+      </p>
+
+      <p>
+        <label for="password1">Password:</label><br>
+        <input type="password" name="password1" value="" id="password1">
+      </p>
+
+      <p>
+        <label for="fileupload1">File Upload:</label><br>
+        <input type="file" name="fileupload1" value="" id="fileupload1">
+      </p>
+
+
+      <p>
+        <label for="range1">Range Input (Slider):</label><br>
+        <input type="range" name="range1" value="" id="range1" min="1" max="100"
+        oninput="document.getElementById('range_result').value=this.value">
+        <input type="text" name="range_result" value="" id="range_result" readonly>
+      </p>
+
+      <p>
+        <label for="color1">Color Field:</label><br>
+        <input type="color" name="color1" value="" id="color1"
+        oninput="document.getElementById('color_result').value=this.value">
+        <input type="text" name="color_result" value="" id="color_result" readonly>
+      </p>
+
+
+
+      <p>
+        <input type="submit" name="submit" value="Submit">
+      </p>
+    </form>
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
+  </body>
+</html>
